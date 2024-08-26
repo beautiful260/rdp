@@ -1,4 +1,4 @@
-name: Persistent RDP Session
+name: CI
 
 on:
   schedule:
