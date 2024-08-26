@@ -4,11 +4,11 @@ on:
   push:  # Triggers the workflow on push to any branch
   workflow_dispatch:  # Allows the workflow to be manually triggered from the GitHub UI
   schedule:
-    - cron: "0 * * * *"  # Runs every hour
+    - cron: "0 */6 * * *"
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: Download ngrok
       run: |
